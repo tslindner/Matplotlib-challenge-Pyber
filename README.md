@@ -1,4 +1,11 @@
 
+<big><big><b>Pyber Ride Sharing</b></big></big>
+
+<b>Analysis</b>  <br>
+Observed Trend 1:  Rides in rural cities tend to be more expensive per ride, but much less frequent.<br>
+Observed Trend 2:  Cities make up a larger percentage of the total revenue, therefore the higher revenue from rural cities does not make up for the low frequency.<br>
+Observed Trend 3:  Suburban cities are between the urban and rural in all measured metrics.
+
 
 ```python
 # Import dependencies
@@ -80,6 +87,8 @@ area3 = rural_df['driver count per city'] * 20
 
 ```
 
+<big><b>Bubble Plot of Ride Sharing Data</big></b>
+
 
 ```python
 # Creating separate scatter plots for each city type, and combining them
@@ -104,12 +113,14 @@ plt.ylabel('Average Fare ($)', fontsize=20)
 
 
 
-![png](output_3_1.png)
+![png](output_5_1.png)
 
 
 <big>Note:  <br>
     Circle size correlates with number of drivers per city. 
     </big>
+
+<big><b>Total Fares by City Type</b></big>
 
 
 ```python
@@ -152,9 +163,9 @@ plt.pie(fare_totals, radius=3, textprops=text, wedgeprops=wedge, labels=fare_lab
 
 
 
-    ([<matplotlib.patches.Wedge at 0x16159b899e8>,
-      <matplotlib.patches.Wedge at 0x16159b943c8>,
-      <matplotlib.patches.Wedge at 0x16159b94e48>],
+    ([<matplotlib.patches.Wedge at 0x24cb3a0c908>,
+      <matplotlib.patches.Wedge at 0x24cb3a152b0>,
+      <matplotlib.patches.Wedge at 0x24cb3a15d30>],
      [Text(-3.39423,-0.197959,'Urban'),
       Text(3.36092,-0.514003,'Suburban'),
       Text(1.80339,2.88233,'Rural')],
@@ -165,8 +176,10 @@ plt.pie(fare_totals, radius=3, textprops=text, wedgeprops=wedge, labels=fare_lab
 
 
 
-![png](output_5_1.png)
+![png](output_8_1.png)
 
+
+<big><b>Total Rides by City Type</b></big>
 
 
 ```python
@@ -188,9 +201,9 @@ plt.pie(rides_totals, radius=3, textprops=text, wedgeprops=wedge, labels=rides_l
 
 
 
-    ([<matplotlib.patches.Wedge at 0x16159be59b0>,
-      <matplotlib.patches.Wedge at 0x16159bf0438>,
-      <matplotlib.patches.Wedge at 0x16159bf0eb8>],
+    ([<matplotlib.patches.Wedge at 0x24cb3a65908>,
+      <matplotlib.patches.Wedge at 0x24cb3a6f390>,
+      <matplotlib.patches.Wedge at 0x24cb3a6fe10>],
      [Text(-3.39484,-0.1873,'Urban'),
       Text(3.37936,-0.374026,'Suburban'),
       Text(2.16146,2.62452,'Rural')],
@@ -201,8 +214,10 @@ plt.pie(rides_totals, radius=3, textprops=text, wedgeprops=wedge, labels=rides_l
 
 
 
-![png](output_6_1.png)
+![png](output_10_1.png)
 
+
+<big><b>Total Drivers by City Type</b></big>
 
 
 ```python
@@ -222,9 +237,9 @@ plt.pie(drivers_totals, radius=3, textprops=text, wedgeprops=wedge, labels=drive
 
 
 
-    ([<matplotlib.patches.Wedge at 0x16159c37fd0>,
-      <matplotlib.patches.Wedge at 0x16159c3fa20>,
-      <matplotlib.patches.Wedge at 0x16159c484e0>],
+    ([<matplotlib.patches.Wedge at 0x24cb3ab8f28>,
+      <matplotlib.patches.Wedge at 0x24cb3ac0978>,
+      <matplotlib.patches.Wedge at 0x24cb3ac9438>],
      [Text(-3.39997,-0.0145427,'Urban'),
       Text(3.38519,-0.316995,'Suburban'),
       Text(2.80521,1.92115,'Rural')],
@@ -235,5 +250,5 @@ plt.pie(drivers_totals, radius=3, textprops=text, wedgeprops=wedge, labels=drive
 
 
 
-![png](output_7_1.png)
+![png](output_12_1.png)
 
